@@ -17,6 +17,8 @@
     <?php while (have_posts()): the_post(); ?>
       <?php get_template_part('template-parts/content', 'preview'); ?>
     <?php endwhile; ?>
+        <h2><?php printf( __( 'Risultati di ricerca per: %s', 'soundart' ), get_search_query() ); ?></h2>
+        <h2><?php esc_html_e('Blog', 'soundart'); ?></h2>
 
   </section>
         
