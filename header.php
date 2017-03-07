@@ -15,12 +15,10 @@
           <a rel="home" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></span></a>
         </h1>
 
-        <?php if (has_nav_menu('menu')): ?>
+        <?php if (has_nav_menu('menu_header')): ?>
           <nav role="navigation">
-            <h2><?php esc_html_e('Navigazione', 'soundart'); ?></h2>
-
             <?php wp_nav_menu(array(
-              'theme_location' => 'menu',
+              'theme_location' => 'menu_header',
               'items_wrap' => '%3$s'
             )); ?>
           </nav>

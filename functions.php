@@ -15,7 +15,8 @@
 			// Enables dynamic navigation --------------------------------------------
 
       register_nav_menus( array(
-				'menu' => 'Menu'
+				'menu_header' => 'Principale',
+        'menu_footer' => 'Riassuntivo'
 			));
 
       // Load the assets -------------------------------------------------------
