@@ -3,6 +3,7 @@
 <?php if (have_posts()): ?>
 
   <section class="index">
+    <div class="container">
 
     <?php if (is_category()): ?>
       <h2><?php single_cat_title(); ?></h2>
@@ -20,6 +21,7 @@
         <h2><?php printf( __( 'Risultati di ricerca per: %s', 'soundart' ), get_search_query() ); ?></h2>
         <h2><?php esc_html_e('Blog', 'soundart'); ?></h2>
 
+    </div>
   </section>
         
 <?php else: ?>

@@ -10,18 +10,20 @@
   <body>
 
     <header role="banner" class="header">
-      <h1>
-        <a rel="home" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></span></a>
-      </h1>
+      <div class="container">
+        <h1>
+          <a rel="home" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></span></a>
+        </h1>
 
-      <?php if (has_nav_menu('menu')): ?>
-        <nav role="navigation">
-          <h2><?php esc_html_e('Navigazione', 'soundart'); ?></h2>
+        <?php if (has_nav_menu('menu')): ?>
+          <nav role="navigation">
+            <h2><?php esc_html_e('Navigazione', 'soundart'); ?></h2>
 
-          <?php wp_nav_menu(array(
-            'theme_location' => 'menu',
-            'items_wrap' => '%3$s'
-          )); ?>
-        </nav>
-      <?php endif; ?>
+            <?php wp_nav_menu(array(
+              'theme_location' => 'menu',
+              'items_wrap' => '%3$s'
+            )); ?>
+          </nav>
+        <?php endif; ?>
+      </div>
     </header>
