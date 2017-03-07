@@ -5,11 +5,20 @@
 .container
   margin-right: auto
   margin-left: auto
-  padding-right: $padding
-  padding-left: $padding
-  
+  padding-right: $padding-mb
+  padding-left: $padding-mb
+
   @include media($screen-sm-min)
     max-width: $screen-sm-min
+    padding-right: $padding-sm
+    padding-left: $padding-sm
 
   @include media($screen-md-min)
     max-width: $screen-md-min
+    padding-right: $padding-md
+    padding-left: $padding-md
+
+  @include media($screen-lg-min)
+    max-width: $screen-lg-min
+    padding-right: $padding-lg
+    padding-left: $padding-lg
