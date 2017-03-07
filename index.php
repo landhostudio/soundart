@@ -22,7 +22,25 @@
       </ol>
 
     </div>
+    
   </section>
+
+  <?php if (paginate_links()): ?>
+    <nav class="pagination">
+      <div class="container">
+        <?php
+          $args = array(
+            'end_size'  => 1,
+            'mid_size'  => 3,
+            'prev_text' => __('«'),
+            'next_text' => __('»'),
+            'type'      => 'plain'
+          );
+          echo paginate_links($args);
+        ?>
+      </div>
+    </nav>
+  <?php endif; ?>
         
 <?php else: ?>
   <?php get_template_part('template-parts/content', 'none'); ?>
