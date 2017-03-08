@@ -16,11 +16,13 @@
         </h1>
 
         <?php if (has_nav_menu('menu_header')): ?>
-          <nav role="navigation">
-            <?php wp_nav_menu(array(
-              'theme_location' => 'menu_header',
-              'items_wrap' => '%3$s'
-            )); ?>
+          <nav role="navigation" class="menu">
+            <ul>
+              <?php wp_nav_menu(array(
+                'theme_location' => 'menu_header',
+                'items_wrap' => '%3$s'
+              )); ?>
+            </ul>
           </nav>
         <?php endif; ?>
       </div>
